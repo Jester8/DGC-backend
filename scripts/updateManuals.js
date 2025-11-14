@@ -11,9 +11,9 @@ const updateManualsWithImages = async () => {
 
     // Update January manuals with image URLs
     const imageUpdates = [
-      { order: 1, imageUrl: "http://192.168.56.2:5000/public/images/january/king.png" },
-      { order: 2, imageUrl: "http://192.168.56.2:5000/public/images/january/king.png" },
-      { order: 3, imageUrl: "http://192.168.56.2:5000/public/images/january/king.png" },
+      { order: 1, imageUrl: "https://dgc-backend.onrender.com/public/images/january/king.png" },
+      { order: 2, imageUrl: "https://dgc-backend.onrender.com/images/january/king.png" },
+      { order: 3, imageUrl: "https://dgc-backend.onrender.com/images/january/king.png" },
     ];
 
     for (const update of imageUpdates) {
