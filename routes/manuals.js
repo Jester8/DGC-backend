@@ -5,17 +5,29 @@ const router = express.Router();
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-// Get recommended manuals (first 4 of January + rotation after 7 days)
+// Get recommended manuals (rotates through months starting from January 2026)
 router.get('/recommended', async (req, res) => {
   try {
     const currentDate = new Date();
-    const dayOfYear = Math.floor((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
-    const weekNumber = Math.floor(dayOfYear / 7);
-    const startMonthIndex = Math.floor(weekNumber / 4);
-    const currentMonthIndex = Math.min(startMonthIndex, 11);
+    const year = currentDate.getFullYear();
+    const startYear = 2026; // Year we're starting from
+    
+    // Calculate weeks since January 1, 2026
+    const jan1_2026 = new Date(2026, 0, 1);
+    const weeksSinceStart = Math.floor((currentDate - jan1_2026) / (7 * 24 * 60 * 60 * 1000));
+    
+    // Each month has approximately 4 weeks, so divide weeks by 4 to get month index
+    const monthOffset = Math.floor(weeksSinceStart / 4);
+    
+    // If before Jan 1, 2026, default to January
+    let currentMonthIndex = 0;
+    if (currentDate >= jan1_2026) {
+      currentMonthIndex = monthOffset % 12; // Cycle through 12 months
+    }
     
     const primaryMonth = months[currentMonthIndex];
-    const secondaryMonth = currentMonthIndex < 11 ? months[currentMonthIndex + 1] : months[0];
+    const secondaryMonthIndex = (currentMonthIndex + 1) % 12;
+    const secondaryMonth = months[secondaryMonthIndex];
     
     const primaryManuals = await Manual.find({ month: primaryMonth })
       .sort({ order: 1 })
@@ -33,9 +45,10 @@ router.get('/recommended', async (req, res) => {
     res.json({
       success: true,
       data: recommended,
-      currentWeek: weekNumber,
+      weeksSinceStart,
       primaryMonth,
-      secondaryMonth
+      secondaryMonth,
+      currentDate: currentDate.toISOString()
     });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
