@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 const mainPointSchema = new mongoose.Schema({
@@ -8,7 +7,6 @@ const mainPointSchema = new mongoose.Schema({
 }, { _id: false });
 
 const manualSchema = new mongoose.Schema({
-  id: String,
   title: {
     type: String,
     required: true
@@ -23,23 +21,22 @@ const manualSchema = new mongoose.Schema({
   classDiscussion: String,
   conclusion: String,
   imageUrl: String,
+  subTopics: [String],
+  coverBannerImg: String,
+
   month: {
     type: String,
-    enum: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    enum: [
+      'January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'
+    ],
     required: true
   },
+
   order: {
     type: Number,
     required: true
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now
-  },
-  updatedAt: {
-    type: Date,
-    default: Date.now
   }
-});
+}, { timestamps: true });
 
-export default mongoose.model('Manual', manualSchema);
+export default mongoose.models.Manual || mongoose.model('Manual', manualSchema);
