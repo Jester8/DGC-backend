@@ -15,27 +15,22 @@ const months = [
 router.get('/recommended', async (req, res) => {
   try {
     const currentDate = new Date();
-    const jan1_2026 = new Date(2026, 0, 1);
+    const currentMonthIndex = currentDate.getMonth(); // 0-11
+    const currentMonth = months[currentMonthIndex];
+    const nextMonthIndex = (currentMonthIndex + 1) % 12;
+    const nextMonth = months[nextMonthIndex];
 
-    const weeksSinceStart = Math.floor((currentDate - jan1_2026) / (7 * 24 * 60 * 60 * 1000));
-    const monthOffset = Math.floor(weeksSinceStart / 4);
-
-    let currentMonthIndex = 0;
-    if (currentDate >= jan1_2026) {
-      currentMonthIndex = monthOffset % 12;
-    }
-
-    const primaryMonth = months[currentMonthIndex];
-    const secondaryMonth = months[(currentMonthIndex + 1) % 12];
-
-    const primaryManuals = await Manual.find({ month: primaryMonth })
+    // Get up to 4 manuals from current month
+    const primaryManuals = await Manual.find({ month: currentMonth })
       .sort({ order: 1 })
       .limit(4);
 
-    const secondaryManuals = await Manual.find({ month: secondaryMonth })
+    // Get 1 manual from next month as a preview
+    const secondaryManuals = await Manual.find({ month: nextMonth })
       .sort({ order: 1 })
       .limit(1);
 
+    // Combine: up to 3 from current month + 1 from next month
     const recommended = [
       ...primaryManuals.slice(0, 3),
       ...(secondaryManuals.length > 0 ? secondaryManuals : primaryManuals.slice(3, 4))
@@ -44,9 +39,8 @@ router.get('/recommended', async (req, res) => {
     res.json({
       success: true,
       data: recommended,
-      primaryMonth,
-      secondaryMonth,
-      weeksSinceStart,
+      currentMonth,
+      nextMonth,
       currentDate: currentDate.toISOString()
     });
 
