@@ -7,6 +7,7 @@ const mainPointSchema = new mongoose.Schema({
 }, { _id: false });
 
 const manualSchema = new mongoose.Schema({
+  id: String,
   title: {
     type: String,
     required: true
@@ -21,8 +22,11 @@ const manualSchema = new mongoose.Schema({
   classDiscussion: String,
   conclusion: String,
   imageUrl: String,
+  subTopic: String,
   subTopics: [String],
   coverBannerImg: String,
+  recommendedBooks: [String],
+  feedbackLink: String,
 
   month: {
     type: String,

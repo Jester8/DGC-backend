@@ -100,8 +100,11 @@ router.post('/create', async (req, res) => {
       classDiscussion,
       conclusion,
       imageUrl,
+      subTopic,
       subTopics,
       coverBannerImg,
+      recommendedBooks,
+      feedbackLink,
       month,
       order
     } = req.body;
@@ -127,8 +130,11 @@ router.post('/create', async (req, res) => {
       classDiscussion,
       conclusion,
       imageUrl,
+      subTopic,
       subTopics: subTopics || [],
       coverBannerImg,
+      recommendedBooks: recommendedBooks || [],
+      feedbackLink,
       month,
       order
     });
@@ -228,7 +234,7 @@ router.get('/edit/month/:month', async (req, res) => {
 
 
 // =========================
-// GET SINGLE MANUAL BY _id (no route conflict anymore)
+// GET SINGLE MANUAL BY _id
 // =========================
 router.get('/edit/manual/:id', async (req, res) => {
   try {

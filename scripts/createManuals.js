@@ -54,6 +54,7 @@ const manualsData = [
     classDiscussion: "If Jesus is the door to the sheepfold, can a man come out from the sheepfold without His permission? Will Jesus permit a man to leave the sheepfold, especially considering that He intends to bring in even those who are out (John 10:16)?",
     conclusion: "Our faith is anchored on a Shepherd who doesn't just tend to us. Our Shepherd also makes us His sheep. It is our association to the Shepherd that makes us a part of the sheepfold. It is a universal and everlasting truth, no one goes in or out of the sheepfold unless Jesus has allowed him. We are implicated because we have entered in by the Door.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
+    feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
     order: 1
   },
@@ -99,6 +100,7 @@ const manualsData = [
     classDiscussion: "The sheep know the Shepherd's voice (John 10:4). In what practical ways can you distinguish the voice of the Great Shepherd from the noise of the world?",
     conclusion: "The sacrifice of Jesus has widely opened us to His unconditional love, protection, salvation and eternal life. Understanding this makes us appreciate and make good use of our inheritance and identity in Christ.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
+    feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
     order: 2
   },
@@ -145,6 +147,7 @@ const manualsData = [
     conclusion: "Jesus, the Great Shepherd, never leaves His flock unattended. He knows us, leads us, provides for us, and protects us. As His sheep, we must remain close to Him, listening and obeying His voice. The safest and most peaceful place to be is under the care of the Shepherd.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
     month: "January",
+    feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     order: 3
   }
 ];
