@@ -14,21 +14,19 @@ const months = [
 // =========================
 router.get('/recommended', async (req, res) => {
   try {
-    const currentDate = new Date();
-    const currentWeek = Math.ceil(currentDate.getDate() / 7); // Week 1, 2, 3, 4, or 5
-
     const currentMonth = 'January';
     
-    // Get the manual for the current week in January
-    const recommended = await Manual.find({ month: currentMonth, week: currentWeek })
-      .sort({ order: 1 });
+    // Get all 3 manuals from January
+    const recommended = await Manual.find({ month: currentMonth })
+      .sort({ order: 1 })
+      .limit(3);
 
     res.json({
       success: true,
       data: recommended,
       currentMonth,
-      currentWeek,
-      currentDate: currentDate.toISOString()
+      count: recommended.length,
+      currentDate: new Date().toISOString()
     });
 
   } catch (error) {
