@@ -14,23 +14,20 @@ const months = [
 // =========================
 router.get('/recommended', async (req, res) => {
   try {
-    const currentDate = new Date();
-    const currentMonthIndex = currentDate.getMonth(); // 0-11
-    const currentMonth = months[currentMonthIndex];
-    const nextMonthIndex = (currentMonthIndex + 1) % 12;
-    const nextMonth = months[nextMonthIndex];
+    const currentMonth = 'January';
+    const nextMonth = 'February';
 
-    // Get up to 4 manuals from current month
+    // Get up to 4 manuals from January
     const primaryManuals = await Manual.find({ month: currentMonth })
       .sort({ order: 1 })
       .limit(4);
 
-    // Get 1 manual from next month as a preview
+    // Get 1 manual from February as a preview
     const secondaryManuals = await Manual.find({ month: nextMonth })
       .sort({ order: 1 })
       .limit(1);
 
-    // Combine: up to 3 from current month + 1 from next month
+    // Combine: up to 3 from January + 1 from February
     const recommended = [
       ...primaryManuals.slice(0, 3),
       ...(secondaryManuals.length > 0 ? secondaryManuals : primaryManuals.slice(3, 4))
@@ -41,14 +38,13 @@ router.get('/recommended', async (req, res) => {
       data: recommended,
       currentMonth,
       nextMonth,
-      currentDate: currentDate.toISOString()
+      currentDate: new Date().toISOString()
     });
 
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
 });
-
 
 // =========================
 // GET MANUALS BY MONTH
