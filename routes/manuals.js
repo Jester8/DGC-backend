@@ -14,31 +14,21 @@ const months = [
 // =========================
 router.get('/recommended', async (req, res) => {
   try {
+    const currentDate = new Date();
+    const currentWeek = Math.ceil(currentDate.getDate() / 7); // Week 1, 2, 3, 4, or 5
+
     const currentMonth = 'January';
-    const nextMonth = 'February';
-
-    // Get up to 4 manuals from January
-    const primaryManuals = await Manual.find({ month: currentMonth })
-      .sort({ order: 1 })
-      .limit(4);
-
-    // Get 1 manual from February as a preview
-    const secondaryManuals = await Manual.find({ month: nextMonth })
-      .sort({ order: 1 })
-      .limit(1);
-
-    // Combine: up to 3 from January + 1 from February
-    const recommended = [
-      ...primaryManuals.slice(0, 3),
-      ...(secondaryManuals.length > 0 ? secondaryManuals : primaryManuals.slice(3, 4))
-    ];
+    
+    // Get the manual for the current week in January
+    const recommended = await Manual.find({ month: currentMonth, week: currentWeek })
+      .sort({ order: 1 });
 
     res.json({
       success: true,
       data: recommended,
       currentMonth,
-      nextMonth,
-      currentDate: new Date().toISOString()
+      currentWeek,
+      currentDate: currentDate.toISOString()
     });
 
   } catch (error) {
