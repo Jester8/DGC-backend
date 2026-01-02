@@ -32,6 +32,7 @@ const normalizeScripture = (scripture) => {
     '2John': '2 John',
     '3John': '3 John',
     'Ps': 'Psalm',
+    'Psalms': 'Psalm'
   };
   
   let normalized = scripture;
@@ -54,85 +55,75 @@ const normalizeMainPoints = (mainPoints) => {
 };
 
 // ---------------------------
-// ALL MANUALS DATA HERE
+// ALL MANUALS DATA HERE - EXACT FORMAT FROM YOUR MANUAL
 // ---------------------------
 const manualsData = [
   {
     id: "jan_2026_01",
-    title: "Jesus, The Great Shepherd",
-  
+    title: "JESUS, The Great Shepherd",
+    theme: "JESUS, The Great Shepherd",
     week: 1,
     date: "4th January, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
     imageUrl: "https://dgc-backend.onrender.com/public/images/january/4th.png",
-    memoryVerse: "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly. (John 10:10 KJV)",
+    memoryVerse: "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly. — John 10:10 (KJV)",
     text: "John 10:1-30",
-    introduction: "Have you ever wondered why Jesus chose the relationship between a shepherd and a flock to explain His ministry in John 10? Why not a goldsmith? Why not a farmer or even a fisherman? This choice invites us to pay close attention to who a shepherd is and how a shepherd operates. If Jesus calls Himself the Good Shepherd, then an important question naturally follows: what makes Him a good shepherd? When we examine Scripture carefully, we see that the symbolism of sheep and shepherd is not unique to John 10. It appears repeatedly across the Bible, again calling our attention to the importance of this topic.",
+    introduction: "Have you ever wondered why Jesus chose the relationship between a shepherd and a flock to explain His ministry in John 10? Why not a goldsmith? Why not a farmer or even a fisherman? This choice invites us to pay close attention to who a shepherd is and how a shepherd operates. If Jesus calls Himself the Good Shepherd, then an important question naturally follows: what makes Him a good shepherd?\n\nWhen we examine Scripture carefully, we see that the symbolism of sheep and shepherd is not unique to John 10. It appears repeatedly across the Bible, again calling our attention to the importance of this topic.\n\nSome notable examples include:\n• Old Testament: Genesis 48:15, Psalm 78:52, Psalm 80:1, Isaiah 40:11, Jeremiah 23:1–4, Ezekiel 34:11–16.\n• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, John 21:15–17, Hebrews 13:20, 1 Peter 2:25, 1 Peter 5:2–4, Revelation 7:17.",
     mainPoints: [
       {
         title: "Who is a Shepherd?",
-        description: "A shepherd is a person who tends, feeds, and guards flocks of sheep. The function of a shepherd is a 24/7 commitment to the safety and health of his flocks. His duties cut across leading, protecting, restoring, and providing for his flock.",
-        references: ["Genesis 48:15", "Psalm 78:52", "Psalm 80:1", "Isaiah 40:11", "Jeremiah 23:1-4", "Ezekiel 34:11-16"]
+        description: "A shepherd is a person who tends, feeds, and guards flocks of sheep. The function of a shepherd is a 24/7 commitment to the safety and health of his flocks. His duties cut across leading, protecting, restoring, and providing for his flock."
       },
       {
-        title: "The Shepherd in the Old Testament",
-        description: "The symbolism of sheep and shepherd appears throughout the Old Testament, showing God's consistent care for His people.",
-        references: ["Genesis 48:15", "Psalm 78:52", "Psalm 80:1", "Isaiah 40:11", "Jeremiah 23:1-4", "Ezekiel 34:11-16"]
-      },
-      {
-        title: "The Shepherd in the New Testament",
-        description: "Jesus is revealed as the fulfillment of the shepherd prophecies, demonstrating His care and compassion for His flock.",
-        references: ["Matthew 9:36", "Matthew 18:12-14", "Luke 15:3-7", "John 21:15-17", "Hebrews 13:20", "1 Peter 2:25", "1 Peter 5:2-4", "Revelation 7:17"]
-      },
-      {
-        title: "What Makes Jesus the Great Shepherd?",
-        description: "Jesus demonstrates His greatness as a shepherd through His ability to lay down His life, His compassion, His power to give life, and His ability to keep and restore His sheep.",
-        references: ["John 10:11", "John 10:10", "John 10:28-29", "Matthew 9:36", "Hebrews 13:20", "Luke 15:3-7"]
+        title: "What makes Jesus the Great Shepherd?",
+        description: "• His ability to lay down His life for the sheep (John 10:11, Hebrews 13:20).\n• His compassion for the sheep (Matthew 9:36).\n• His ability to give life (John 10:10, 28).\n• His ability to keep and restore (John 10:29, Luke 15:3–7).",
+        references: ["John 10:11", "Hebrews 13:20", "Matthew 9:36", "John 10:10", "John 10:28", "John 10:29", "Luke 15:3-7"]
       }
     ],
-    classDiscussion: "From our Bible text (John 10:1-30), what other things can you say make Jesus the Great Shepherd?",
+    classDiscussion: "From our Bible text, what other things can you say make Jesus the Great Shepherd?",
     conclusion: "Since we have this Great Shepherd, we can confidently embrace Psalm 23 as we walk through 2026. The word 'shepherd' here comes from the Hebrew râ‛âh, meaning to keep, to feed, to tend, and to associate with. This reveals that Christ's shepherding is not distant or occasional; it is personal, consistent, and ever-present. Resting in the assurance that 'The Lord is my shepherd,' let us pledge our allegiance to Him alone, following His voice and refusing the voice of a stranger.",
-    declaration: "The LORD is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake. Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me. Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over. Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.",
+    declaration: "The LORD is my shepherd; I shall not want.\nHe maketh me to lie down in green pastures: he leadeth me beside the still waters.\nHe restoreth my soul: he leadeth me in the paths of righteousness for his name's sake.\nYea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.\nThou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.\nSurely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.",
+
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
     order: 1
   },
   {
     id: "jan_2026_02",
-    title: "Jesus Lays Down His Life for the Sheep",
-    subTopic: "His Ability to Lay Down His Life",
+    title: "Jesus as the Door of the Sheep",
+    subTopic: "Jesus as the Door of the Sheep",
     theme: "JESUS, The Great Shepherd",
     week: 2,
     date: "11th January, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
     imageUrl: "https://dgc-backend.onrender.com/public/images/january/11th.png",
-    memoryVerse: "I am the good shepherd: the good shepherd giveth his life for the sheep. (John 10:11 KJV)",
-    text: "John 10:1-30",
-    introduction: "What makes Jesus the Great Shepherd? His ability to lay down His life for the sheep stands as the ultimate demonstration of His love and commitment to His flock. This sacrificial love is at the heart of understanding Jesus' shepherding ministry. Unlike a hireling who abandons the sheep in danger, Jesus willingly gave His life for our salvation.",
+    memoryVerse: "I am the door: by me if any man enters in, he shall be saved and shall go in and out, and find pasture. (John 10:9)",
+    text: "John 10:1-16, Psalm 23:1-6",
+    introduction: "Unlike the earthly work of a shepherd that begins when there is a sheepfold, Jesus' shepherding exists even before the sheepfold. He is the Shepherd of the means by which we become part of the sheepfold; He is the very door to the sheepfold. He doesn't just take care of the sheep alone; He brings the sheep in.",
     mainPoints: [
       {
-        title: "His Ability to Lay Down His Life for the Sheep",
-        description: "Jesus demonstrated ultimate sacrifice by laying down His life for the redemption of all who believe in Him.",
-        references: ["John 10:11", "John 10:15", "Hebrews 13:20"]
+        title: "Jesus is the only way to the father",
+        description: "Jesus is only way to God, and every other portal or means is a lie. We can go to God through Jesus alone.",
+        references: ["John 14:6", "Ephesians 2:18", "Hebrews 7:25", "1 Timothy 2:5", "John 3:16-18"]
       },
       {
-        title: "His Compassion for the Sheep",
-        description: "Jesus was moved with compassion for the people, seeing them as sheep without a shepherd, and He responded with care and healing.",
-        references: ["Matthew 9:36", "Mark 6:34"]
+        title: "Jesus is the only way to experience salvation",
+        description: "The only way to be saved is by believing in Jesus and His finished work.",
+        references: ["Acts 4:12", "John 10:7-9", "John 8:24", "Romans 5:1-2"]
       },
       {
-        title: "His Ability to Give Life",
-        description: "Jesus came that we might have life and have it more abundantly. He is the source of eternal and abundant life.",
-        references: ["John 10:10", "John 10:28", "John 11:25-26"]
+        title: "Jesus is the only way to eternal life",
+        description: "The sheep are inheritors of eternal life, so to experience it, one must belong to the sheepfold. The only way to belong to the sheepfold is by believing in Jesus.",
+        references: ["1 John 5:11-12", "Romans 6:23", "John 3:16", "John 3:36", "John 6:40", "John 5:24"]
       },
       {
-        title: "His Ability to Keep and Restore",
-        description: "Jesus keeps His sheep and restores those who have gone astray, just as a shepherd searches for lost sheep.",
-        references: ["John 10:29", "Luke 15:3-7", "John 21:15-17"]
+        title: "Jesus is the only way by which anyone can go out of the sheepfold",
+        description: "The sheepfold belongs to Jesus, and He decides what happens to His sheep. One of His decisions is that the sheep remain with Him forever.",
+        references: ["John 10:27-28"]
       }
     ],
-    classDiscussion: "How does understanding Jesus as a shepherd who laid down His life change your perspective on His love and care for you?",
-    conclusion: "The sacrifice of Jesus has opened the way for us to experience His unconditional love, protection, salvation, and eternal life. As His sheep, we must recognize the cost of our redemption and respond with gratitude, trust, and devoted following.",
+    classDiscussion: "If Jesus is the door to the sheepfold, can a man come out from the sheepfold without His permission? Will Jesus permit a man to leave the sheepfold, especially considering that He intends to bring in even those who are out (John 10:16)?",
+    conclusion: "Our faith is anchored on a Shepherd who doesn't just tend to us. Our Shepherd also makes us His sheep. It is our association to the Shepherd that makes us a part of the sheepfold. It is a universal and everlasting truth, no one goes in or out of the sheepfold unless Jesus has allowed him. We are implicated because we have entered in by the Door.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
@@ -140,40 +131,45 @@ const manualsData = [
   },
   {
     id: "jan_2026_03",
-    title: "The Shepherd Knows and Leads His Sheep",
-    subTopic: "His Personal Relationship with the Sheep",
+    title: "The Cost of our Salvation",
+    subTopic: "The Cost of our Salvation",
     theme: "JESUS, The Great Shepherd",
     week: 3,
     date: "18th January, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
     imageUrl: "https://dgc-backend.onrender.com/public/images/january/18th.png",
-    memoryVerse: "I am the good shepherd: and know my sheep, and am known of mine. (John 10:14 KJV)",
-    text: "John 10:1-30",
-    introduction: "One of the most comforting aspects of Jesus as our Great Shepherd is His intimate knowledge of us. He knows His sheep by name, understands their needs, and leads them with personal care. This knowledge is not detached or superficial but deeply personal and caring.",
+    memoryVerse: "I am the good shepherd: the good shepherd giveth his life for the sheep. (John 10:11 KJV)",
+    text: "John 10:11-18",
+    introduction: "At the very core of our salvation is the ultimate price Jesus paid to save mankind. Jesus Christ as the Great Shepherd, is evident in how His shepherding over us began not in comfort but by laying down His life on the Cross. Through this act of devotion, He established an eternal ownership and an unbreakable security for all who are called by His Name.",
     mainPoints: [
       {
-        title: "He Knows His Sheep Personally",
-        description: "Jesus has a personal relationship with each of His sheep. He knows each one by name and understands their individual needs, struggles, and hopes.",
-        references: ["John 10:14", "Psalm 139:1-3", "2 Timothy 2:19"]
+        title: "He Fulfilled Prophecy",
+        description: "By sacrificing His life and dying on the Cross.",
+        references: ["Ezekiel 34:23-24", "Isaiah 40:11", "Micah 5:4-5", "John 10:11", "John 10:15"]
       },
       {
-        title: "He Leads His Sheep with Guidance",
-        description: "The Great Shepherd goes before His flock, showing them the right path and guiding them into all truth.",
-        references: ["Psalm 23:1-3", "Isaiah 48:17", "John 16:13"]
+        title: "The Promise of Redemption and Salvation",
+        description: "Through His death, our sins were forgiven, our souls restored and by faith, we were saved.",
+        references: ["1 Peter 2:25", "Revelation 5:9"]
       },
       {
-        title: "The Sheep Know and Recognize His Voice",
-        description: "Jesus' sheep hear His voice and follow Him, recognizing His guidance among all other voices and influences.",
-        references: ["John 10:3-5", "John 10:27", "Isaiah 30:21"]
+        title: "He Provides all we ever need, loving us unconditionally",
+        description: "The Great Shepherd meets all our needs out of His abundant love.",
+        references: ["Psalm 23:1-3", "John 10:9", "Psalm 23:4-6"]
       },
       {
-        title: "He Provides Everything His Sheep Need",
-        description: "The Great Shepherd ensures that His sheep lack nothing, satisfying both their physical and spiritual needs.",
-        references: ["Psalm 23:1-2", "Philippians 4:19", "Matthew 6:33"]
+        title: "Assurance of Eternal Life",
+        description: "We have eternal life in God through Jesus Christ.",
+        references: ["John 10:28-30", "Titus 1:2", "Romans 5:21"]
+      },
+      {
+        title: "Our Identity as Sons is Formed in Him",
+        description: "We are formed into sons of God through our relationship with Christ.",
+        references: ["John 10:3-5", "John 1:12-13", "Romans 8:14", "1 John 3:1"]
       }
     ],
-    classDiscussion: "In what practical ways can you distinguish the voice of the Great Shepherd from the noise of the world? How can you develop a stronger sensitivity to His guidance?",
-    conclusion: "Jesus, the Great Shepherd, never leaves His flock unattended. He knows us intimately, leads us faithfully, provides generously, and protects us completely. As His sheep, we must remain close to Him, listening to His voice, and following His direction daily.",
+    classDiscussion: "The sheep know the Shepherd's voice (John 10:4). In what practical ways can you distinguish the voice of the Great Shepherd from the noise of the world?",
+    conclusion: "The sacrifice of Jesus has widely opened us to His unconditional love, protection, salvation and eternal life. Understanding this makes us appreciate and make good use of our inheritance and identity in Christ.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
@@ -181,40 +177,45 @@ const manualsData = [
   },
   {
     id: "jan_2026_04",
-    title: "The Shepherd Protects and Provides for His Sheep",
-    subTopic: "His Protection and Provision",
+    title: "The Shepherd Who Cares",
+    subTopic: "The Shepherd Who Cares",
     theme: "JESUS, The Great Shepherd",
     week: 4,
     date: "25th January, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
     imageUrl: "https://dgc-backend.onrender.com/public/images/january/25th.png",
-    memoryVerse: "My sheep hear my voice, and I know them, and they follow me: And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand. (John 10:27-28 KJV)",
-    text: "John 10:1-30",
-    introduction: "A true shepherd's primary responsibility is to protect his flock from danger and provide for their needs. Jesus, as our Great Shepherd, provides complete security and abundant provision for His sheep. In a world full of threats and uncertainties, we can find perfect peace and security in His hands.",
+    memoryVerse: "I am the good shepherd: the good shepherd giveth his life for the sheep. (John 10:11 KJV)",
+    text: "John 10:11-18",
+    introduction: "In Scripture, Jesus is revealed as the Great Shepherd who loves, guides, and protects His sheep. A shepherd's duty is to lead and care for his flock, even at the cost of his own life. Unlike a hireling who runs away when danger comes, Jesus laid down His life for us. To know Him as our Shepherd is to walk in trust, peace, and total dependence on His voice.",
     mainPoints: [
       {
-        title: "He Protects His Sheep from Danger",
-        description: "Jesus stands as a shield for His sheep, watching over them and delivering them from the enemy's snare and all harm.",
-        references: ["John 10:27-28", "Psalm 91:1-4", "Zechariah 2:5", "Psalm 23:4"]
+        title: "He Knows His Sheep",
+        description: "Jesus has a personal relationship with His sheep. He knows each one by name and understands their needs.",
+        references: ["John 10:14", "Psalm 139:1-3", "2 Timothy 2:19"]
       },
       {
-        title: "No One Can Snatch His Sheep from His Hand",
-        description: "The security of the believer is guaranteed. Jesus' grip on His sheep is secure, and nothing can separate them from His care.",
-        references: ["John 10:28-29", "Romans 8:38-39", "John 6:39"]
+        title: "He Leads His Sheep",
+        description: "The Great Shepherd goes before His flock, showing them the right path and guiding them into truth.",
+        references: ["Psalm 23:1-3", "Isaiah 48:17", "John 16:13"]
       },
       {
-        title: "He Provides for All Physical and Spiritual Needs",
-        description: "The Great Shepherd ensures provision in every area of life, from daily bread to spiritual nourishment and growth.",
-        references: ["Psalm 23:1-6", "Matthew 6:25-34", "Philippians 4:19"]
+        title: "He Protects from Danger",
+        description: "Jesus stands as a shield for His sheep. He watches over them and delivers them from the enemy's snare.",
+        references: ["John 10:27-28", "Psalm 91:1-4", "Zechariah 2:5"]
       },
       {
-        title: "He Restores and Heals the Wounded",
-        description: "Jesus brings healing, restoration, and comfort to those who are broken, weary, or lost.",
-        references: ["Isaiah 40:11", "Luke 15:3-7", "Psalm 23:3"]
+        title: "He Provides for His Sheep",
+        description: "The Great Shepherd ensures that His sheep do not lack. He satisfies both physical and spiritual needs.",
+        references: ["Psalm 23:1-2", "Philippians 4:19", "Matthew 6:33"]
+      },
+      {
+        title: "He Laid Down His Life",
+        description: "Out of love, Jesus gave His life for the salvation of His sheep. His sacrifice is the ultimate proof of His care.",
+        references: ["John 10:15", "Isaiah 53:6", "Hebrews 13:20-21"]
       }
     ],
-    classDiscussion: "What does it mean that nothing can pluck you out of Jesus' hand? How should this assurance change the way you face your daily challenges and fears?",
-    conclusion: "Because Jesus is our Great Shepherd who protects and provides, we can live in confidence and peace. As we continue to trust in His shepherding, we experience the fullness of His protection, provision, and care. Let us commit to following Him faithfully, knowing that we are secure in His hands and lack nothing under His care.",
+    classDiscussion: "1. What makes Jesus different from other shepherds or leaders?\n2. How can we train our hearts to recognize and follow His voice daily?",
+    conclusion: "Jesus, the Great Shepherd, never leaves His flock unattended. He knows us, leads us, provides for us, and protects us. As His sheep, we must remain close to Him, listening and obeying His voice. The safest and most peaceful place to be is under the care of the Shepherd.",
     recommendedBooks: ["The Present Day – Ministry of Jesus Christ by Kenneth E. Hagin"],
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
@@ -254,6 +255,11 @@ const createManuals = async () => {
 
     inserted.forEach((manual) => {
       console.log(`📖 ${manual.month} - Week ${manual.week}: ${manual.title}`);
+      if (manual.recommendedBooks) {
+        console.log(`   📚 Recommended Books: ${manual.recommendedBooks.length}`);
+      } else {
+        console.log(`   📚 No recommended books`);
+      }
     });
 
     await mongoose.connection.close();

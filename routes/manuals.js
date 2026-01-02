@@ -105,6 +105,7 @@ router.post('/create', async (req, res) => {
       coverBannerImg,
       recommendedBooks,
       feedbackLink,
+      declaration,      
       month,
       order
     } = req.body;
@@ -133,6 +134,7 @@ router.post('/create', async (req, res) => {
       subTopic,
       subTopics: subTopics || [],
       coverBannerImg,
+      declaration,
       recommendedBooks: recommendedBooks || [],
       feedbackLink,
       month,

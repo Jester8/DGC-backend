@@ -25,6 +25,7 @@ const manualSchema = new mongoose.Schema({
   subTopic: String,
   subTopics: [String],
   coverBannerImg: String,
+  declaration: String,
   recommendedBooks: [String],
   feedbackLink: String,
 
