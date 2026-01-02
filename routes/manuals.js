@@ -19,7 +19,7 @@ router.get('/recommended', async (req, res) => {
     // Get all 3 manuals from January
     const recommended = await Manual.find({ month: currentMonth })
       .sort({ order: 1 })
-      .limit(3);
+      .limit(4);
 
     res.json({
       success: true,

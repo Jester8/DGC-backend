@@ -54,6 +54,73 @@ const normalizeMainPoints = (mainPoints) => {
   }));
 };
 
+// Function to format scriptures in text for clickability
+const formatScripturesInText = (text) => {
+  if (!text) return text;
+  
+  // For January 4th manual only, format the notable examples section
+  if (text.includes("Some notable examples include:")) {
+    console.log("📖 Formatting scriptures for notable examples...");
+    
+    // Split into lines for easier processing
+    const lines = text.split('\n');
+    const formattedLines = lines.map(line => {
+      // Check if line contains bullet points with scriptures
+      if (line.includes('•') && (line.includes('Old Testament:') || line.includes('New Testament:'))) {
+        console.log("📖 Processing line:", line);
+        
+        // Process each scripture reference in the line
+        let formattedLine = line;
+        
+        // List of scripture patterns to look for
+        const scripturePatterns = [
+          // Genesis 48:15
+          /(Genesis\s+\d+:\d+)/g,
+          // Psalm 78:52, Psalm 80:1
+          /(Psalm\s+\d+:\d+)/g,
+          // Isaiah 40:11
+          /(Isaiah\s+\d+:\d+)/g,
+          // Jeremiah 23:1–4 (with en-dash)
+          /(Jeremiah\s+\d+:\d+[–-]\d+)/g,
+          // Ezekiel 34:11–16 (with en-dash)
+          /(Ezekiel\s+\d+:\d+[–-]\d+)/g,
+          // Matthew 9:36
+          /(Matthew\s+\d+:\d+)/g,
+          // Matthew 18:12–14 (with en-dash)
+          /(Matthew\s+\d+:\d+[–-]\d+)/g,
+          // Luke 15:3–7 (with en-dash)
+          /(Luke\s+\d+:\d+[–-]\d+)/g,
+          // John 21:15–17 (with en-dash)
+          /(John\s+\d+:\d+[–-]\d+)/g,
+          // Hebrews 13:20
+          /(Hebrews\s+\d+:\d+)/g,
+          // 1 Peter 2:25
+          /(1 Peter\s+\d+:\d+)/g,
+          // 1 Peter 5:2–4 (with en-dash)
+          /(1 Peter\s+\d+:\d+[–-]\d+)/g,
+          // Revelation 7:17
+          /(Revelation\s+\d+:\d+)/g,
+        ];
+        
+        // Apply all patterns
+        scripturePatterns.forEach(pattern => {
+          formattedLine = formattedLine.replace(pattern, (match) => {
+            console.log(`📖 Found scripture: ${match}`);
+            return match; // Keep as-is, the frontend will detect it
+          });
+        });
+        
+        return formattedLine;
+      }
+      return line;
+    });
+    
+    return formattedLines.join('\n');
+  }
+  
+  return text;
+};
+
 // ---------------------------
 // ALL MANUALS DATA HERE - EXACT FORMAT FROM YOUR MANUAL
 // ---------------------------
@@ -68,7 +135,13 @@ const manualsData = [
     imageUrl: "https://dgc-backend.onrender.com/public/images/january/4th.png",
     memoryVerse: "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly. — John 10:10 (KJV)",
     text: "John 10:1-30",
-    introduction: "Have you ever wondered why Jesus chose the relationship between a shepherd and a flock to explain His ministry in John 10? Why not a goldsmith? Why not a farmer or even a fisherman? This choice invites us to pay close attention to who a shepherd is and how a shepherd operates. If Jesus calls Himself the Good Shepherd, then an important question naturally follows: what makes Him a good shepherd?\n\nWhen we examine Scripture carefully, we see that the symbolism of sheep and shepherd is not unique to John 10. It appears repeatedly across the Bible, again calling our attention to the importance of this topic.\n\nSome notable examples include:\n• Old Testament: Genesis 48:15, Psalm 78:52, Psalm 80:1, Isaiah 40:11, Jeremiah 23:1–4, Ezekiel 34:11–16.\n• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, John 21:15–17, Hebrews 13:20, 1 Peter 2:25, 1 Peter 5:2–4, Revelation 7:17.",
+    introduction: `Have you ever wondered why Jesus chose the relationship between a shepherd and a flock to explain His ministry in John 10? Why not a goldsmith? Why not a farmer or even a fisherman? This choice invites us to pay close attention to who a shepherd is and how a shepherd operates. If Jesus calls Himself the Good Shepherd, then an important question naturally follows: what makes Him a good shepherd?
+
+When we examine Scripture carefully, we see that the symbolism of sheep and shepherd is not unique to John 10. It appears repeatedly across the Bible, again calling our attention to the importance of this topic.
+
+Some notable examples include:
+• Old Testament: Genesis 48:15, Psalm 78:52, Psalm 80:1, Isaiah 40:11, Jeremiah 23:1–4, Ezekiel 34:11–16.
+• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, John 21:15–17, Hebrews 13:20, 1 Peter 2:25, 1 Peter 5:2–4, Revelation 7:17.`,
     mainPoints: [
       {
         title: "Who is a Shepherd?",
@@ -82,8 +155,12 @@ const manualsData = [
     ],
     classDiscussion: "From our Bible text, what other things can you say make Jesus the Great Shepherd?",
     conclusion: "Since we have this Great Shepherd, we can confidently embrace Psalm 23 as we walk through 2026. The word 'shepherd' here comes from the Hebrew râ‛âh, meaning to keep, to feed, to tend, and to associate with. This reveals that Christ's shepherding is not distant or occasional; it is personal, consistent, and ever-present. Resting in the assurance that 'The Lord is my shepherd,' let us pledge our allegiance to Him alone, following His voice and refusing the voice of a stranger.",
-    declaration: "The LORD is my shepherd; I shall not want.\nHe maketh me to lie down in green pastures: he leadeth me beside the still waters.\nHe restoreth my soul: he leadeth me in the paths of righteousness for his name's sake.\nYea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.\nThou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.\nSurely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.",
-
+    declaration: `The LORD is my shepherd; I shall not want.
+He maketh me to lie down in green pastures: he leadeth me beside the still waters.
+He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake.
+Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me.
+Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over.
+Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.`,
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
     order: 1
@@ -233,10 +310,18 @@ const createManuals = async () => {
     console.log("✅ MongoDB connected successfully!");
 
     const normalizedData = manualsData.map(manual => {
+      // Format scriptures in introduction for January 4th manual
+      let formattedIntroduction = manual.introduction;
+      if (manual.id === "jan_2026_01") {
+        console.log(`📖 Formatting scriptures for January 4th introduction...`);
+        formattedIntroduction = formatScripturesInText(manual.introduction);
+      }
+      
       const normalized = {
         ...manual,
         memoryVerse: normalizeScripture(manual.memoryVerse),
         text: normalizeScripture(manual.text),
+        introduction: formattedIntroduction,
         mainPoints: normalizeMainPoints(manual.mainPoints)
       };
       
@@ -261,6 +346,20 @@ const createManuals = async () => {
         console.log(`   📚 No recommended books`);
       }
     });
+
+    // Show January 4th scripture examples
+    const jan4Manual = inserted.find(m => m.id === "jan_2026_01");
+    if (jan4Manual) {
+      console.log(`\n📖 January 4th Notable Examples Scriptures:`);
+      const introLines = jan4Manual.introduction.split('\n');
+      introLines.forEach((line, index) => {
+        if (line.includes('Genesis') || line.includes('Psalm') || line.includes('Matthew') || 
+            line.includes('Luke') || line.includes('John') || line.includes('Hebrews') || 
+            line.includes('1 Peter') || line.includes('Revelation')) {
+          console.log(`   Line ${index + 1}: ${line.trim()}`);
+        }
+      });
+    }
 
     await mongoose.connection.close();
     console.log("\n🔌 Database connection closed");
