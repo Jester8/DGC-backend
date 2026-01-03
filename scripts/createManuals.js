@@ -12,7 +12,6 @@ if (!process.env.MONGO_URI) {
   process.exit(1);
 }
 
-// Function to normalize scripture references
 const normalizeScripture = (scripture) => {
   if (!scripture) return scripture;
   
@@ -23,14 +22,16 @@ const normalizeScripture = (scripture) => {
     '2 Cor': '2 Corinthians',
     '1 Thess': '1 Thessalonians',
     '2 Thess': '2 Thessalonians',
-    '1 Pet': '1 Peter',
-    '2 Pet': '2 Peter',
+    '1 Pet': '1 Peter',           
+    '2 Pet': '2 Peter',          
     '1 Jn': '1 John',
     '2 Jn': '2 John',
     '3 Jn': '3 John',
     '1John': '1 John',
     '2John': '2 John',
     '3John': '3 John',
+    '1Peter': '1 Peter',         
+    '2Peter': '2 Peter',          
     'Ps': 'Psalm',
     'Psalms': 'Psalm'
   };
@@ -53,6 +54,8 @@ const normalizeMainPoints = (mainPoints) => {
     references: point.references ? point.references.map(normalizeScripture) : []
   }));
 };
+
+
 
 // Function to format scriptures in text for clickability
 const formatScripturesInText = (text) => {
@@ -121,6 +124,7 @@ const formatScripturesInText = (text) => {
   return text;
 };
 
+
 // ---------------------------
 // ALL MANUALS DATA HERE - EXACT FORMAT FROM YOUR MANUAL
 // ---------------------------
@@ -141,7 +145,7 @@ When we examine Scripture carefully, we see that the symbolism of sheep and shep
 
 Some notable examples include:
 • Old Testament: Genesis 48:15, Psalm 78:52, Psalm 80:1, Isaiah 40:11, Jeremiah 23:1–4, Ezekiel 34:11–16.
-• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, John 21:15–17, Hebrews 13:20, 1 Peter 2:25, 1 Peter 5:2–4, Revelation 7:17.`,
+• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, 1 Peter 2:25, John 21:15–17, Hebrews 13:20, , 1 Peter 5:2–4, Revelation 7:17.`,
     mainPoints: [
       {
         title: "Who is a Shepherd?",
