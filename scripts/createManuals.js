@@ -145,7 +145,7 @@ When we examine Scripture carefully, we see that the symbolism of sheep and shep
 
 Some notable examples include:
 • Old Testament: Genesis 48:15, Psalm 78:52, Psalm 80:1, Isaiah 40:11, Jeremiah 23:1–4, Ezekiel 34:11–16.
-• New Testament: Matthew 9:36, Matthew 18:12–14, Luke 15:3–7, 1 Peter 2:25, John 21:15–17, Hebrews 13:20, , 1 Peter 5:2–4, Revelation 7:17.`,
+• New Testament: Matthew 9:36, Matthew 18:12–14,  Luke 15:3–7,   1 Peter 2:25, John 21:15–17, Hebrews 13:20, , 1 Peter 5:2–4, Revelation 7:17.`,
     mainPoints: [
       {
         title: "Who is a Shepherd?",
