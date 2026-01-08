@@ -55,8 +55,6 @@ const normalizeMainPoints = (mainPoints) => {
   }));
 };
 
-
-
 // Function to format scriptures in text for clickability
 const formatScripturesInText = (text) => {
   if (!text) return text;
@@ -123,7 +121,6 @@ const formatScripturesInText = (text) => {
   
   return text;
 };
-
 
 // ---------------------------
 // ALL MANUALS DATA HERE - EXACT FORMAT FROM YOUR MANUAL
@@ -301,6 +298,48 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
     month: "January",
     order: 4
+  },
+  // ================= FEBRUARY 1ST MANUAL =================
+  {
+    id: "feb_2026_01",
+    title: "The Parables of Jesus on Sin/Repentance",
+    subTopic: "The Parables of Jesus on Sin/Repentance",
+    theme: "The Parables of Jesus",
+    week: 1,
+    date: "1st February, 2026",
+    coverBannerImg: "https://dgc-backend.onrender.com/public/images/february/jan.png",
+    imageUrl: "https://dgc-backend.onrender.com/public/images/february/25th.png",
+    memoryVerse: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth. (Luke 15:10)",
+    text: "Luke 5:32",
+    introduction: "A biblical parable is a short, simple story used to illustrate a religious or moral lesson. Jesus told parables on sin and forgiveness to show that God wasn't just a God of judgement and justice as the law revealed, but also a God of mercy and forgiveness.",
+    mainPoints: [
+      {
+        title: "The Lost Sheep (Luke 15:3–7)",
+        description: "The premium value of a soul in God's sight",
+        references: ["Luke 15:3-7"]
+      },
+      {
+        title: "The Lost Coin (Luke 15:8–10)",
+        description: "God can go any length to save or restore.",
+        references: ["Luke 15:8-10"]
+      },
+      {
+        title: "The Lost Son (Luke 15:11–32)",
+        description: "God's unconditional love for repentant sinners.",
+        references: ["Luke 15:11-32"]
+      },
+      {
+        title: "The Unforgiving Servant (Matthew 18:21–35)",
+        description: "Extend forgiveness just like God forgave you.",
+        references: ["Matthew 18:21-35"]
+      }
+    ],
+    classDiscussion: "Taking cues from point 4, is it possible for man to forgive and forget?",
+    conclusion: "There is no sin God cannot forgive, and he's more willing to forgive than we are willing to be forgiven. However, forgiveness cannot be received without repentance.",
+    recommendedBooks: ["The Jesus I never knew by Philip Yancey"],
+    feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    month: "February",
+    order: 5
   }
 ];
 
