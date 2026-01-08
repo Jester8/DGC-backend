@@ -302,13 +302,13 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
   // ================= FEBRUARY 1ST MANUAL =================
   {
     id: "feb_2026_01",
-    title: "The Parables of Jesus on Sin/Repentance",
-    subTopic: "The Parables of Jesus on Sin/Repentance",
+    title: "The Parables of Jesus on Sin and Repentance",
+    subTopic: "The Parables of Jesus on Sin and Repentance",
     theme: "The Parables of Jesus",
     week: 1,
     date: "1st February, 2026",
-    coverBannerImg: "https://dgc-backend.onrender.com/public/images/february/jan.png",
-    imageUrl: "https://dgc-backend.onrender.com/public/images/february/25th.png",
+    coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
+    imageUrl: "https://dgc-backend.onrender.com/public/images/january/25th.png",
     memoryVerse: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth. (Luke 15:10)",
     text: "Luke 5:32",
     introduction: "A biblical parable is a short, simple story used to illustrate a religious or moral lesson. Jesus told parables on sin and forgiveness to show that God wasn't just a God of judgement and justice as the law revealed, but also a God of mercy and forgiveness.",
