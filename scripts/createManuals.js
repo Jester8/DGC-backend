@@ -300,47 +300,155 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     order: 4
   },
   // ================= FEBRUARY 1ST MANUAL =================
+ [
   {
-    id: "feb_2026_01",
-    title: "The Parables of Jesus on Sin and Repentance",
-    subTopic: "The Parables of Jesus on Sin and Repentance",
-    theme: "The Parables of Jesus",
-    week: 1,
-    date: "1st February, 2026",
-    coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
-    imageUrl: "https://dgc-backend.onrender.com/public/images/feb/feb1.png",
-    memoryVerse: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth. (Luke 15:10)",
-    text: "Luke 5:32",
-    introduction: "A biblical parable is a short, simple story used to illustrate a religious or moral lesson. Jesus told parables on sin and forgiveness to show that God wasn't just a God of judgement and justice as the law revealed, but also a God of mercy and forgiveness.",
-    mainPoints: [
+    "id": "feb_2026_01",
+    "title": "The Parables of Jesus on Sin and Repentance",
+    "subTopic": "The Parables of Jesus on Sin and Repentance",
+    "theme": "The Parables of Jesus",
+    "week": 1,
+    "date": "1st February, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/january/jan.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/feb/feb1.png",
+    "memoryVerse": "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth. (Luke 15:10)",
+    "text": "Luke 5:32",
+    "introduction": "A biblical parable is a short, simple story used to illustrate a religious or moral lesson. Jesus told parables on sin and forgiveness to show that God wasn't just a God of judgement and justice as the law revealed, but also a God of mercy and forgiveness.",
+    "mainPoints": [
       {
-        title: "The Lost Sheep (Luke 15:3–7)",
-        description: "The premium value of a soul in God's sight",
-        references: ["Luke 15:3-7"]
+        "title": "The Lost Sheep (Luke 15:3–7)",
+        "description": "The premium value of a soul in God's sight",
+        "references": ["Luke 15:3-7"]
       },
       {
-        title: "The Lost Coin (Luke 15:8–10)",
-        description: "God can go any length to save or restore.",
-        references: ["Luke 15:8-10"]
+        "title": "The Lost Coin (Luke 15:8–10)",
+        "description": "God can go any length to save or restore.",
+        "references": ["Luke 15:8-10"]
       },
       {
-        title: "The Lost Son (Luke 15:11–32)",
-        description: "God's unconditional love for repentant sinners.",
-        references: ["Luke 15:11-32"]
+        "title": "The Lost Son (Luke 15:11–32)",
+        "description": "God's unconditional love for repentant sinners.",
+        "references": ["Luke 15:11-32"]
       },
       {
-        title: "The Unforgiving Servant (Matthew 18:21–35)",
-        description: "Extend forgiveness just like God forgave you.",
-        references: ["Matthew 18:21-35"]
+        "title": "The Unforgiving Servant (Matthew 18:21–35)",
+        "description": "Extend forgiveness just like God forgave you.",
+        "references": ["Matthew 18:21-35"]
       }
     ],
-    classDiscussion: "Taking cues from point 4, is it possible for man to forgive and forget?",
-    conclusion: "There is no sin God cannot forgive, and he's more willing to forgive than we are willing to be forgiven. However, forgiveness cannot be received without repentance.",
-    recommendedBooks: ["The Jesus I never knew by Philip Yancey"],
-    feedbackLink: "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
-    month: "February",
-    order: 5
+    "classDiscussion": "Taking cues from point 4, is it possible for man to forgive and forget?",
+    "conclusion": "There is no sin God cannot forgive, and he's more willing to forgive than we are willing to be forgiven. However, forgiveness cannot be received without repentance.",
+    "recommendedBooks": ["The Jesus I never knew by Philip Yancey"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "February",
+    "order": 5
+  },
+  {
+    "id": "feb_2026_02",
+    "title": "The Kingdom Parables of Jesus",
+    "subTopic": "The Kingdom Parables of Jesus",
+    "theme": "The Parables of Jesus",
+    "week": 2,
+    "date": "8th February, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/january/jan.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/feb/feb2.png",
+    "memoryVerse": "But blessed are your eyes for they see, and your ears for they hear; (Matthew 13:16)",
+    "text": "Matthew 13:10-17",
+    "introduction": "Jesus' parables were spoken and written for man's whole redemption - as in bodily, soulful, and spiritual health. Yet, our Lord felt it out-of-place to share the treasures of the kingdom with people with blinded eyes and dulled ears. These treasures, which the prophets of old desired to look into, though unavailable to outsiders, are available to us as we approach His eternal Word with unveiled hearts.",
+    "mainPoints": [
+      {
+        "title": "The Sower (Matthew 13:3-9)",
+        "description": "Attitudes towards God's Kingdom",
+        "references": ["Matthew 13:3-9"]
+      },
+      {
+        "title": "Tares and Wheat (Matthew 13:24-30)",
+        "description": "The present and future reality of evil amidst God's earthly Kingdom",
+        "references": ["Matthew 13:24-30"]
+      },
+      {
+        "title": "The Mustard Seed (Matthew 13:31-32)",
+        "description": "The growth potential of the Kingdom",
+        "references": ["Matthew 13:31-32"]
+      },
+      {
+        "title": "A Leaven (Matthew 13:33)",
+        "description": "The influence of the Kingdom",
+        "references": ["Matthew 13:33"]
+      },
+      {
+        "title": "The Hidden Treasure (Matthew 13:44)",
+        "description": "The prize of the Kingdom; Seeking and apprehending the prize of the Kingdom",
+        "references": ["Matthew 13:44"]
+      }
+    ],
+    "classDiscussion": "By the Spirit's help, what else do you find from these parables: about God or His Kingdom, worth sharing?",
+    "assignment": "What do these parables talk about God’s attitudes on the Kingdom? A Dragnet (Matthew 13:47-50); Vineyard Labourers (Matthew 20:1-16); Two Sons (Matthew 21:28-32); Wicked Vinedressers (Matthew 21:33-43); A Growing Seed (Mark 4:26-29) – Growth in the Kingdom; The Great Supper (Luke 14:15-24); and A Pearl of Great Price (Matthew 13:45-46).",
+    "conclusion": "The Kingdom of God is available to everyone who would accept the responsibility of receiving, seeking, and/or knocking on its gates, via the Way created by Jesus’ salvific work. (Hebrews 10:19-25.)",
+    "recommendedBooks": ["The Jesus I never knew by Philip Yancey"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "February",
+    "order": 6
+  },
+  {
+    "id": "feb_2026_03",
+    "title": "The Parables of Stewardship, Service, and Preparedness",
+    "subTopic": "The Parables of Stewardship, Service, and Preparedness",
+    "theme": "The Parables of Jesus",
+    "week": 3,
+    "date": "15th February, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/january/jan.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/feb/feb3.png",
+    "memoryVerse": "Who then is that faithful and wise steward, whom his lord shall make ruler over his household, to give them their portion of meat in due season? (Luke 12:42, KJV)",
+    "text": "Matthew 25:14–30; Luke 19:11–27; Luke 12:16–21",
+    "introduction": "Jesus’ parables on stewardship, service, and preparedness reveal God’s expectation for faithfulness, compassion, and readiness in the believer’s walk. We are managers of God’s resources, called to serve with love and to live with eternity in view. Each story underscores accountability, diligence, and spiritual alertness as we await our Lord’s return.",
+    "mainPoints": [
+      {
+        "title": "Stewardship Parables",
+        "description": "Talents (Matt. 25:14-30, Luke 19:11-27) - Faithful use of God’s gifts brings reward; negligence leads to loss. Rich Fool (Luke 12:16-21) - Wealth without purpose toward God is emptiness.",
+        "references": ["Matthew 25:14-30", "Luke 19:11-27", "Luke 12:16-21"]
+      },
+      {
+        "title": "Service Parable",
+        "description": "Good Samaritan (Luke 10:30–37) - True service is love in action beyond religion or race.",
+        "references": ["Luke 10:30-37"]
+      },
+      {
+        "title": "Preparedness Parables",
+        "description": "Barren Fig Tree (Luke 13:6–9) – God expects fruitfulness before judgment. Ten Virgins (Matt. 25:1–13) – Spiritual vigilance ensures readiness for the Bridegroom’s coming.",
+        "references": ["Luke 13:6-9", "Matthew 25:1-13"]
+      }
+    ],
+    "classDiscussion": "How do these parables challenge your personal approach to responsibility, compassion, and spiritual readiness?",
+    "assignment": "What do these Jesus’ parables tell you? Unjust Steward (Luke 16:1–13); Marriage of the King’s Son (Matt. 22:1–14)?",
+    "conclusion": "God calls every believer to stewardship, service, and preparedness. Faithful servants invest their gifts, love others selflessly, and remain spiritually awake until Christ returns.",
+    "confession": "I am a faithful steward, a joyful servant, and a prepared bride for my Lord’s coming!",
+    "recommendedBooks": ["The Jesus I never knew by Philip Yancey"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "February",
+    "order": 7
+  },
+  {
+    "id": "feb_2026_04",
+    "title": "Sunday School Outline",
+    "subTopic": "Sunday School Outline",
+    "theme": "The Parables of Jesus",
+    "week": 4,
+    "date": "22nd February, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/january/jan.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/feb/feb4.png",
+    "memoryVerse": "",
+    "text": "",
+    "introduction": "",
+    "mainPoints": [],
+    "classDiscussion": "",
+    "conclusion": "",
+    "recommendedBooks": ["The Jesus I never knew by Philip Yancey"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "February",
+    "order": 8,
+    "note": "Outline provided but content details not fully specified in the input. This entry serves as a placeholder for the 22nd February lesson."
   }
+]
 ];
 
 // ---------------------------
