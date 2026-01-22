@@ -300,7 +300,7 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     order: 4
   },
   // ================= FEBRUARY 1ST MANUAL =================
- [
+ 
   {
     "id": "feb_2026_01",
     "title": "The Parables of Jesus on Sin and Repentance",
@@ -448,7 +448,7 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     "order": 8,
     "note": "Outline provided but content details not fully specified in the input. This entry serves as a placeholder for the 22nd February lesson."
   }
-]
+
 ];
 
 // ---------------------------
