@@ -308,7 +308,7 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     week: 1,
     date: "1st February, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/january/jan.png",
-    imageUrl: "https://dgc-backend.onrender.com/public/images/january/25th.png",
+    imageUrl: "https://dgc-backend.onrender.com/public/images/january/feb1.png",
     memoryVerse: "Likewise, I say unto you, there is joy in the presence of the angels of God over one sinner that repenteth. (Luke 15:10)",
     text: "Luke 5:32",
     introduction: "A biblical parable is a short, simple story used to illustrate a religious or moral lesson. Jesus told parables on sin and forgiveness to show that God wasn't just a God of judgement and justice as the law revealed, but also a God of mercy and forgiveness.",
