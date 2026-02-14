@@ -447,7 +447,57 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     "month": "February",
     "order": 8,
     "note": "Outline provided but content details not fully specified in the input. This entry serves as a placeholder for the 22nd February lesson."
-  }
+  },
+
+  // ================= MARCH 2026 MANUALS =================
+  {
+    "id": "mar_2026_01",
+    "title": "LOVE - The Nature of the Father, The revelation of the Son",
+    "subTopic": "LOVE - The Nature of the Father, The revelation of the Son",
+    "theme": "The Love Walk of Jesus",
+    "week": 1,
+    "date": "1st March, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/march/march.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/march/march1.png",
+    "memoryVerse": "\"but God demonstrates His own love towards us in that while we were still sinners, Christ died for us\" (Romans 5:8 NKJV).",
+    "text": "1John 4:16, John 15:9, Romans 5:8",
+    "introduction": "To truly understand the love walk of our Lord and Saviour Jesus, we must get to the origin and that is \"God is Love\" (1 John 4:16). We must study the way Jesus perceived the love of His Father for Him and understand why it was His main motivation. A deep study of the gospel reveals this. We need to understand this because we are to function on earth the same way that Jesus did.",
+    "mainPoints": [
+      {
+        "title": "Jesus understood and was conscious of the love the Father had for Him",
+        "description": "",
+        "references": ["John 5:20", "John 15:9"]
+      },
+      {
+        "title": "He came to reveal the love of the Father",
+        "description": "",
+        "references": ["Romans 5:8", "John 3:16"]
+      },
+      {
+        "title": "His death is the highest demonstration of Love to man",
+        "description": "",
+        "references": ["John 15:13"]
+      },
+      {
+        "title": "Jesus wanted His disciples to know that the Father loved them as much as the father loved Him",
+        "description": "",
+        "references": ["John 17:23", "John 16:27"]
+      },
+      {
+        "title": "His miracles were expressions of his deep love and compassion for humanity",
+        "description": "",
+        "references": ["Matthew 20:29-34", "Matthew 15:32-35"]
+      }
+    ],
+    "classDiscussion": "In what ways did agape love define the ministry of Jesus, and how should it manifest in the life and ministry of every believer.",
+    "conclusion": "We have seen how Jesus came as a demonstration of the Love of the Father, how He was conscious of this love and how His daily life was an outflow of compassion towards men. If truly we are His disciples, then we must meditate on this until we are conscious of the love of God for us through Christ and allow our love for God and men to be our greatest motivation in Kingdom Service.",
+    "recommendedBooks": ["LOVE: The way to Victory by Kenneth E. Hagin"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "March",
+    "order": 9
+  },
+ 
+
 
 ];
 

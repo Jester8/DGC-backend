@@ -14,10 +14,9 @@ const months = [
 // =========================
 router.get('/recommended', async (req, res) => {
   try {
-    // Get ALL manuals from the database, sorted by month and order
-    // This will include January, February, March, etc.
+    
     const recommended = await Manual.find()
-      .sort({ createdAt: 1, order: 1 }) // Sort by creation date, then by order
+      .sort({ createdAt: 1, order: 1 }) 
       .lean();
 
     res.json({
