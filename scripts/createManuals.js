@@ -450,6 +450,7 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
   },
 
   // ================= MARCH 2026 MANUALS =================
+ [
   {
     "id": "mar_2026_01",
     "title": "LOVE - The Nature of the Father, The revelation of the Son",
@@ -496,6 +497,125 @@ Surely goodness and mercy shall follow me all the days of my life: and I will dw
     "month": "March",
     "order": 9
   },
+  {
+    "id": "mar_2026_02",
+    "title": "Jesus, Our Perfect Example of Love",
+    "subTopic": "Jesus, Our Perfect Example of Love",
+    "theme": "The Love Walk of Jesus",
+    "week": 2,
+    "date": "8th March, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/march/march.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/march/march2.png",
+    "memoryVerse": "\"But God commendeth his love toward us, in that while we were yet sinners, Christ dies for us\" (Romans 5:8).",
+    "text": "John 15:12-13",
+    "introduction": "Jesus is our true and perfect picture of love. He loved without conditions, ultimately giving his life for all humanity. He is calling us to walk in love just as he did.",
+    "mainPoints": [
+      {
+        "title": "His love was unconditional, not based on who we are but on who He is",
+        "description": "",
+        "references": ["1John 4:10-16"]
+      },
+      {
+        "title": "His love was seen in action; He did not just speak it, he showed it",
+        "description": "",
+        "references": ["John 13:14-15", "Matthew 14:14", "Matthew 15:32"]
+      },
+      {
+        "title": "His love was sacrificial",
+        "description": "",
+        "references": ["John 15:13", "1John 3:16"]
+      }
+    ],
+    "classDiscussion": "In what practical ways can the church show Christ like love to the community or the environment they belong to?",
+    "conclusion": "Jesus is love personified. His entire life was an expression of God's love towards all humanity. We are expected to walk in His footsteps, loving unconditionally, sacrificially and in action not just in words alone. When we love as Jesus loved, we reveal God's heart to the world.",
+    "recommendedBooks": ["LOVE: The way to Victory by Kenneth E. Hagin"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "March",
+    "order": 10
+  },
+  {
+    "id": "mar_2026_03",
+    "title": "Love in Service",
+    "subTopic": "Love in Service",
+    "theme": "The Love Walk of Jesus",
+    "week": 3,
+    "date": "15th March, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/march/march.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/march/march3.png",
+    "memoryVerse": "\"For, brethren, ye have been called unto liberty; only use not liberty for an occasion to the flesh, but by love serve one another\" (Galatians 5:13 KJV).",
+    "text": "John 13:3-5, Philippians 2:5-8",
+    "introduction": "Love finds its purest expression in service. Jesus, the Son of God, showed us that love is not just emotion or confession, it is a posture of the heart that seeks to lift others. When He knelt to wash His disciples' feet, He wasn't acting out of obligation, but out of love that serves. Love in service is the willingness to stoop so that others can rise, to give when it's not convenient, and to reach out when others withdraw. As believers, we are called to reflect this kind of love, one that goes beyond words into actions that heal, strengthens and restore. True service is love made visible.",
+    "mainPoints": [
+      {
+        "title": "Love Serves, Not Seeking to Be Served",
+        "description": "Jesus declared that He came not to be served but to serve. Genuine love expresses itself through humility, finding joy in meeting the needs of others without seeking recognition.",
+        "references": ["Matthew 20:28"]
+      },
+      {
+        "title": "Service Is Proof of Christlikeness",
+        "description": "To walk in love is to walk as Christ did. Each act of service no matter how small mirrors the heart of the Master. When we serve, heaven recognizes our love as true worship.",
+        "references": ["Philippians 2:5-7"]
+      },
+      {
+        "title": "Love in Service Heals the Hurting",
+        "description": "There are many around us who are bruised, broken, and weary. Sometimes, the best sermon they will ever hear is a hand that helps or a heart that listens. Jesus touched the untouchable, fed the hungry, and comforted the broken. When we serve with love, we become extensions of His compassion.",
+        "references": ["Luke 4:18", "Matthew 25:35-36"]
+      },
+      {
+        "title": "Love in Service Strengthens the Body of Christ",
+        "description": "A loving church is a serving church. When believers serve one another in love, divisions are healed and unity grows. Service fuels community and makes the love of God tangible.",
+        "references": ["Galatians 5:13-14"]
+      }
+    ],
+    "classDiscussion": "Why do some believers find it easier to say they love rather than show it through service?",
+    "conclusion": "Love that does not serve is incomplete. Jesus' love was not passive, it was poured out through His hands, His time, and ultimately His life. As followers of Christ, our love must take the same shape: reaching the hurting, lifting the weak, and shining light where there's darkness. When love finds its way in our service, the world will see Jesus through us.",
+    "recommendedBooks": ["LOVE: The way to Victory by Kenneth E. Hagin"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "March",
+    "order": 11
+  },
+  {
+    "id": "mar_2026_04",
+    "title": "Love as a Commandment",
+    "subTopic": "Love as a Commandment",
+    "theme": "The Love Walk of Jesus",
+    "week": 4,
+    "date": "22nd March, 2026",
+    "coverBannerImg": "https://dgc-backend.onrender.com/public/images/march/march.png",
+    "imageUrl": "https://dgc-backend.onrender.com/public/images/march/march4.png",
+    "memoryVerse": "\"And this commandment have we from him, that he who loveth God, love his brother also.\" (1John 4:21 KJV).",
+    "text": "John 13:34-35, Galatians 5:14",
+    "introduction": "The Christian faith is centered on love. Jesus did not just teach about love, he lived it. When Jesus commanded us to love one another, He was not giving a suggestion but a divine instruction that reveals God's nature and purpose for humanity.",
+    "mainPoints": [
+      {
+        "title": "God is love",
+        "description": "Nature demonstrates God's love towards mankind, thus expressing who God is.",
+        "references": ["1John 4:8"]
+      },
+      {
+        "title": "Love fulfills the law",
+        "description": "The commandment given to mankind is summed up in love towards God and towards mankind.",
+        "references": ["Romans 13:8-10", "Matthew 22:37-39"]
+      },
+      {
+        "title": "Love reflects our Identity in Christ",
+        "description": "Jesus wants to reveal his love character through us.",
+        "references": ["John 13:35"]
+      },
+      {
+        "title": "Love begets unity and peace",
+        "description": "God wants us to show the world the reality of His kingdom and the need to serve one another selflessly.",
+        "references": ["Colossians 3:14"]
+      }
+    ],
+    "classDiscussion": "Why is it sometimes difficult to love others as Jesus commanded?",
+    "conclusion": "The divine command that reflects God's nature in us is Love. True discipleship is seen in how we love selflessly, sincerely and continually.",
+    "recommendedBooks": ["LOVE: The way to Victory by Kenneth E. Hagin"],
+    "feedbackLink": "bit.ly/DGCSUNDAYSCHOOLATTENDANCE",
+    "month": "March",
+    "order": 12
+  }
+]
  
 
 
