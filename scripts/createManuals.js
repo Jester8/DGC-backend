@@ -75,7 +75,7 @@ const aprilManuals = [
     week: 1,
     date: "5th April, 2026",
     coverBannerImg: "https://dgc-backend.onrender.com/public/images/april/april.png",
-    imageUrl: "https://dgc-backend.onrender.com/public/images/april/april5th.png",
+    imageUrl: "https://dgc-backend.onrender.com/public/images/april/april5.png",
     memoryVerse: "For I have given you an example, that ye should do as I have done to you (John 13:15 NKJV).",
     text: "Philippians 2:5-8, John 13:15, Matt 11:29",
     introduction: `The natural man is wired to be selfish in desires and actions, but for a new man in Christ, there is a life we are expected to live; a mind we are expected to have, one renewed in knowledge after the image of the man that created him. While on earth, He lived an exemplary life of service. 
